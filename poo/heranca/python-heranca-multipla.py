@@ -23,7 +23,6 @@ class Ave(Animal):
 class Gato(Mamifero):
     pass
 
-
 class Ornitorrinco(Mamifero, Ave):
     pass
 
