@@ -1,0 +1,460 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEDAER  */
+header {
+  transition: 0.5s;
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #1b1b1b79;
+}
+header i {
+  color: white;
+  font-size: 40pt;
+  cursor: pointer;
+}
+header a + a {
+  margin: 30px;
+}
+header a {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12pt;
+  transition: 0.5s;
+}
+header a:hover {
+  color: #b9b9b9;
+}
+
+header.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header.hide {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+/* HEDAER  */
+/* HOME */
+.home {
+  background-image: url("../../img/snrsbk.jpg");
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+.home .text-group {
+  margin-left: 12%;
+}
+.home .text-group .principal-text {
+  color: #1b1b1b;
+  font-size: 55pt;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.home .text-group button {
+  border: none;
+  font-size: 20pt;
+  padding: 15px;
+  height: 60px;
+  margin-top: 20px;
+  color: white;
+  background-color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  transition: 0.5s;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10%;
+}
+.home button:hover {
+  color: #1b1b1b;
+  background: none;
+  border: 2px solid #1b1b1b;
+}
+
+/* HOME */
+/* SLIDE HOME */
+.slide-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  height: 300px;
+  width: 95vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-top: -60px;
+  overflow-x: hidden;
+}
+.slide-home .slide-single {
+  width: 550px;
+  display: grid;
+  grid-template-areas: "f fs" "f ss";
+}
+.slide-home .slide-single img {
+  width: 250px;
+  grid-area: f;
+  margin-right: 25px;
+}
+.slide-home .slide-description {
+  grid-area: fs;
+  font-weight: 600;
+  font-size: 20pt;
+  color: #1b1b1b;
+  align-self: center;
+}
+.slide-home .slide-readmore {
+  grid-area: ss;
+  text-decoration: none;
+  color: #1b1b1b83;
+  align-self: center;
+  transition: 0.5s;
+}
+.slide-home .slide-readmore:hover {
+  color: rgba(26, 26, 26, 0.7);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* SLIDE HOME */
+/* EXPLORE NOW */
+.explore-now {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #1b1b1b;
+  padding: 20px 20px;
+}
+.explore-now .text-group {
+  width: 45%;
+  min-width: 400px;
+}
+.explore-now .explore-now-title {
+  font-size: 40pt;
+  font-weight: 700;
+}
+.explore-now .explore-now-text {
+  font-size: 13pt;
+}
+.explore-now button {
+  border: none;
+  font-size: 20pt;
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  background-color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.explore-now button:hover {
+  color: #1b1b1b;
+  background-color: white;
+  border: 2px solid #1b1b1b;
+}
+.explore-now img {
+  width: 50%;
+}
+
+/* EXPLORE NOW */
+/* COUNTRIES */
+.countries {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.countries .message-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.countries .message-container .message {
+  display: flex;
+  flex-direction: row;
+  width: 3200px;
+  overflow: hidden;
+  animation-name: slideText;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.countries .message-container .message p {
+  font-size: 40pt;
+  color: #6aa18859;
+  font-weight: 700;
+  margin-left: 40px;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+.countries .country-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.countries .country-single {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-image: url("../../img/japan.jpg");
+  background-size: cover;
+  background-position: right;
+  width: 25%;
+  min-width: 250px;
+  height: 25vw;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.countries .country-single:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.countries .country-single:hover a.guide, .countries .country-single:hover hr {
+  opacity: 1;
+}
+.countries .country-single:hover hr {
+  margin-top: 6px;
+  margin-bottom: 20%;
+}
+.countries .country-single a {
+  font-size: 30pt;
+  font-weight: 600;
+  text-decoration: none;
+  text-indent: 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s;
+}
+.countries .country-single a.guide {
+  display: flex;
+  font-size: 12pt;
+  opacity: 0;
+  margin-bottom: -7px;
+}
+.countries .country-single a.guide i {
+  font-size: 15pt;
+}
+.countries .country-single hr {
+  margin-bottom: 0;
+  width: 100px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* COUNTRIES */
+/*MORE INFO*/
+.more-info {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+}
+.more-info .info-single {
+  width: 30%;
+  min-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 1%;
+}
+.more-info img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.more-info .info-text {
+  font-weight: 600;
+  font-size: 20pt;
+  color: #1b1b1b;
+  margin: 20px 0;
+}
+.more-info .info-description {
+  font-size: 14pt;
+}
+
+/*MORE INFO*/
+.view-blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bbdace;
+  width: 95%;
+  min-height: 200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.view-blog .text {
+  font-size: 23pt;
+  font-weight: 400;
+  text-align: left;
+}
+.view-blog .link {
+  font-size: 14pt;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+.view-blog .link hr {
+  transition: 0.5s;
+  border: none;
+  border-top: 1px black solid;
+  text-align: left;
+  width: 100%;
+}
+.view-blog .link:hover hr {
+  width: 0%;
+}
+
+.more-tips {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+  height: 100vh;
+}
+.more-tips .text-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.more-tips .text-group .text {
+  font-size: 17pt;
+  font-weight: 600;
+  color: #1b1b1bde;
+  margin-bottom: 15px;
+}
+.more-tips .text-group .description {
+  font-size: 12pt;
+  font-weight: 400;
+  color: #1b1b1bcc;
+}
+.more-tips .text-group hr {
+  border: none;
+  border-top: 1px solid #1b1b1b36;
+  margin: 40px 0;
+}
+.more-tips .question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  text-align: left;
+  width: 45%;
+  height: 95%;
+  background-image: url("../../img/praia-mt.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.more-tips .question-container .title {
+  font-size: 40pt;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.more-tips .question-container .description {
+  font-size: 15pt;
+  margin: 10px 0;
+}
+.more-tips .question-container form {
+  display: flex;
+  flex-direction: row;
+}
+.more-tips .question-container form input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  font-size: 12pt;
+  color: white;
+}
+.more-tips .question-container form input:focus {
+  outline: none;
+}
+.more-tips .question-container form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.more-tips .question-container form button {
+  background: none;
+  border: white 1px solid;
+  color: white;
+  font-size: 12pt;
+  padding: 15px;
+  width: 150px;
+}
+
+.explore-dream {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  height: 100vh;
+  background-image: url("../../img/jipe.jpg");
+  background-size: cover;
+}
+.explore-dream p {
+  margin-top: -10%;
+  font-weight: 600;
+  font-size: 50pt;
+  align-self: center;
+}
+.explore-dream button {
+  border: none;
+  font-size: 20pt;
+  padding: 15px;
+  height: 60px;
+  margin-top: 20px;
+  color: white;
+  background-color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  transition: 0.5s;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10%;
+}
+.explore-dream button:hover {
+  color: #1b1b1b;
+  background: none;
+  border: 2px solid #1b1b1b;
+}
+
+@keyframes slideText {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -1800px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1016px) {
+  .countries .country-single {
+    width: 50%;
+    height: 25vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

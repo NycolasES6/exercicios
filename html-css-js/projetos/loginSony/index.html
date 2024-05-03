@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="login">
+    <header>
+      <img src="./assets/logoSony.png" alt="">
+    </header>
+
+    <p class="title">Criar uma conta</p>
+
+    <div class="steps">
+      <button class="back">Voltar</button>
+      <div class="circles">
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <i id="active" class="fa-solid fa-circle"></i>
+        <i id="next" class="fa-solid fa-circle"></i>
+        <i id="next" class="fa-solid fa-circle"></i>
+        <i id="next" class="fa-solid fa-circle"></i>
+        <i id="next" class="fa-solid fa-circle"></i>
+      </div>
+      <button class="next">Seguinte</button>
+    </div>
+
+    <form action="/">
+      <p>
+        Insira um endereço de email válido e uma senha segura. Eniaremos informações importantes a esse endereço de
+        email.<br />
+
+        Seu endereo de emaile usado quando você esquece a sua senha. Outros jogadores não conseguirão visualizá-la.
+      </p>
+
+      <p class="input-text">ID de início de sessão</p>
+      <input type="email" name="email" id="email" placeholder="Endereo de e-mail">
+      <p class="input-text">Senha</p>
+      <input type="password" name="password" id="password" placeholder="Senha">
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/9f0b0017b9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

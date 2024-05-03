@@ -1,0 +1,16 @@
+@mixin containers(){
+    width: 100%;
+    height:100% ;
+    padding:25px 0;
+    color: white;
+}
+@mixin sombra-t($sombra) {
+    text-shadow:0 0 5px $sombra ;
+    @include make-bold(true);
+}
+
+@mixin make-bold($bool){
+    @if $bool == true {
+        font-weight: bold;
+    }
+}
