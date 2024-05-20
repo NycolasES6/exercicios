@@ -39,15 +39,12 @@ def confere_resultado(escolha_do_jogador, escolha_da_maquina):
             global pontos_jogador
             pontos_jogador += 1
             return "O jogador venceu"
-            break
         elif escolha_do_jogador == escolha_da_maquina:
             return "Empate"
-            break
         else:
             global pontos_maquina
             pontos_maquina += 1
             return "A maquina venceu"
-            break
 
 
 """Retorna o placar da partida"""
