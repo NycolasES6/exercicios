@@ -1,0 +1,1 @@
+Crie uma condição "If-Else" no loop "For" que verifica se a variável chamada "var" contém o conteúdo da variável chamada "valor". Além disso, a variável “var” deve conter mais de 113.450 caracteres. Se estas condições forem atendidas, o script deverá imprimir os últimos 20 caracteres da variável "var". Envie estes últimos 20 caracteres como resposta.
