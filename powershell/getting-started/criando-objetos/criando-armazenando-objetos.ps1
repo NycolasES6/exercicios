@@ -9,5 +9,6 @@ Write-Output $newObject
 $otherObject = [PSCustomObject]@{
     ComputerName = "SERVER2"
     OS = 'Ubuntu 24.04 LTS'
-    Enviq
 }
+
+Write-Output $otherObject
