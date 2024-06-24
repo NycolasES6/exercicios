@@ -8,9 +8,17 @@ for i in {1..40}
 do
     var=$(echo "$var" | base64)
 
-    if echo "$variavel" |  '*\-*'
+    # echo ${#var}
+
+    if [[ $var =~ $value ]]
     then
-        echo "$var"
+        lastCharacters=$(echo "$var" | tail -c 20)
+        echo -n "$lastCharacters"
     fi
+
+    # if [ $var -ne $value ]
+    # then
+    #     echo "Chei"
+    # fi
 
 done
